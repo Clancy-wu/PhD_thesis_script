@@ -13,6 +13,7 @@ grps = c('health_before', 'patient_before', 'health_after', 'patient_after')
 # 1_network_construction --------------------------------------------------
 
 ## Network contains positive & negative & absolute
+# Communication dynamics in the human connectome shape the cortex-wide propagation of direct electrical stimulation, Seguin, density=0.25
 densities <- seq(0.25, 0.30, 0.05)
 
 "my_data = fread('brainnetome_surface.csv')
