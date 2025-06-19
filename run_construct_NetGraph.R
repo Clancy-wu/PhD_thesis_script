@@ -11,6 +11,8 @@ registerDoMC(14)
 options(bg.subject_id='participant_id', bg.group='all_group')
 grps = c('health_before', 'patient_before', 'health_after', 'patient_after')
 # 1_network_construction --------------------------------------------------
+out_dir = 'BrainGraphRDS'
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE) # os.makedirs(dir_name, exist_ok=True) in python
 
 ## Network contains positive & negative & absolute
 # Communication dynamics in the human connectome shape the cortex-wide propagation of direct electrical stimulation, Seguin, density=0.25
@@ -67,8 +69,8 @@ for (i in seq_along(densities)){
                                      weighted = TRUE, gnames = covars.all$participant_id,
                                      grpNames = covars.all$all_group )
 }
-saveRDS(gw.sub, file=file.path('BrainGraphRDS/', 'CFS_fiber_weighted_subject.rds'), compress = 'xz')
-save2dataframe(gw.sub, file=file.path('BrainGraphRDS/', 'CFS_fiber_weighted_subject'))
+saveRDS(gw.sub, file=file.path(out_dir, 'CFS_fiber_weighted_subject.rds'), compress = 'xz')
+save2dataframe(gw.sub, file=file.path(out_dir, 'CFS_fiber_weighted_subject'))
 
 ## --------------------------------------------------------------------------
 
