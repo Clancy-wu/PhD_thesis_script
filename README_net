@@ -1,0 +1,20 @@
+Total columns:
+
+Graph
+ [1] "threshold"            "Cp"                   "Lp"                   "E.global"             "mod"                 
+ [6] "density"              "max.comp"             "num.tri"              "diameter"             "transitivity"        
+[11] "assort"               "strength"             "E.local.wt"           "E.global.wt"          "diameter.wt"         
+[16] "Lp.wt"                "num.hubs.wt"          "mod.wt"               "assort.lobe"          "assort.lobe.hemi"    
+[21] "asymm"                "spatial.dist"         "assort.gyrus"         "assort.Yeo_7network"  "assort.Yeo_17network"
+[26] "num.hubs"             "E.local"              "vulnerability"        "participant_id"       "atlas"               
+[31] "modality"             "all_group"  
+
+Vertex
+ [1] "density"         "region"          "lobe"            "hemi"            "gyrus"           "Yeo_7network"   
+ [7] "Yeo_17network"   "degree"          "comp"            "strength"        "knn.wt"          "s.core"         
+[13] "transitivity.wt" "E.local.wt"      "E.nodal.wt"      "Lp.wt"           "hubs.wt"         "comm.wt"        
+[19] "GC.wt"           "PC.wt"           "z.score.wt"      "asymm"           "dist"            "dist.strength"  
+[25] "knn"             "Lp"              "btwn.cent"       "hubs"            "ev.cent"         "lev.cent"       
+[31] "k.core"          "transitivity"    "E.local"         "E.nodal"         "vulnerability"   "eccentricity"   
+[37] "comm"            "GC"              "PC"              "z.score"         "participant_id"  "atlas"          
+[43] "modality"        "all_group"       "threshold"  
